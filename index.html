@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Thuong OS Portfolio</title>
+<title>Tran Nguyen Nguyen Thuong | Digital Marketing Portfolio</title>
+<meta name="description" content="Interactive portfolio of Tran Nguyen Nguyen Thuong, Digital Marketing student at RMIT. 17 projects across e-commerce, UI/UX and content for Routine, Timezone Vietnam and MCV.">
+<meta name="theme-color" content="#4F6FFF">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tran Nguyen Nguyen Thuong | Digital Marketing Portfolio">
+<meta property="og:description" content="A playful desktop-style portfolio: open the folders, take the tour, browse 17 projects.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&family=Silkscreen:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
 <style>
@@ -31,7 +36,7 @@ h1,h2,h3,p{margin:0}
 .cloud.c2{top:30%;left:-40%;width:min(30vw,380px);animation-duration:95s;animation-delay:-40s;opacity:.7}
 .cloud.c3{top:14%;left:-30%;width:min(24vw,300px);animation-duration:120s;animation-delay:-80s;opacity:.6}
 @keyframes drift{from{transform:translateX(0)}to{transform:translateX(160vw)}}
-.grass{position:absolute;left:0;right:0;bottom:var(--barh);height:24vh;min-height:120px;background:url(img/grass.webp) center top/cover}
+.grass{position:absolute;left:0;right:0;bottom:var(--barh);height:24vh;min-height:120px;background:url(grass.webp) center top/cover}
 .wordmark{position:absolute;left:50%;top:39%;transform:translate(-50%,-50%) rotate(-3deg);text-align:center;pointer-events:none;white-space:nowrap}
 .wordmark b{display:block;font:400 clamp(72px,15vw,220px)/.9 var(--display);color:var(--sun)}
 .wordmark i{display:block;font:400 clamp(26px,4.4vw,64px)/1 var(--display);color:var(--paper);margin-top:-.1em}
@@ -147,7 +152,7 @@ h1,h2,h3,p{margin:0}
 .nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;align-items:center}
 
 /* contact */
-.contact{text-align:center;background:var(--sky) url(img/grass.webp) bottom/100% 34% no-repeat;color:var(--paper);padding-bottom:150px;position:relative}
+.contact{text-align:center;background:var(--sky) url(grass.webp) bottom/100% 34% no-repeat;color:var(--paper);padding-bottom:150px;position:relative}
 .contact .big{font:400 clamp(60px,9vw,110px)/.9 var(--display);color:var(--sun);transform:rotate(-3deg)}
 .contact .sm{font:400 30px/1 var(--display);margin-bottom:22px}
 .line{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin:10px 0}
@@ -219,19 +224,19 @@ h1,h2,h3,p{margin:0}
 <div id="boot" aria-hidden="true"><div><b>thuong.os</b><span>LOADING CREATIVE PORTFOLIO 2026</span><div class="load"><i></i></div></div></div>
 
 <main id="desk">
-  <img class="cloud c1" src="img/cloud.webp" alt="">
-  <img class="cloud c2" src="img/cloud.webp" alt="">
-  <img class="cloud c3" src="img/cloud.webp" alt="">
+  <img class="cloud c1" src="cloud.webp" alt="">
+  <img class="cloud c2" src="cloud.webp" alt="">
+  <img class="cloud c3" src="cloud.webp" alt="">
   <div class="wordmark" aria-hidden="true"><span>creative</span><b>Portfolio</b><i>Tran Nguyen Nguyen Thuong · 2026</i></div>
   <div class="grass"></div>
-  <button id="cat" aria-label="Pet the cat"><img src="img/cat.webp" alt="A white cat sitting on the grass"></button>
+  <button id="cat" aria-label="Pet the cat"><img src="cat.webp" alt="A white cat sitting on the grass"></button>
   <div id="meow" role="status"></div>
 
   <nav id="icons" aria-label="Desktop"></nav>
   <div id="wins"></div>
 
   <div id="tour" role="region" aria-label="Guided tour">
-    <img src="img/cat.webp" alt="">
+    <img src="cat.webp" alt="">
     <p id="tourtxt"></p>
     <div class="steps" id="toursteps"></div>
   </div>
@@ -336,27 +341,27 @@ var RENDER={
  about:function(b){b.innerHTML='<div class="about"><div><h3 class="h-script">hi, it\'s ngthuong!</h3><p class="sub-script">who i am</p>'+
   '<p>I\'m <strong>Tran Nguyen Nguyen Thuong</strong>, a final-year Digital Marketing student at RMIT in Ho Chi Minh City, working where marketing, e-commerce and UI/UX meet.</p>'+
   '<p style="margin-top:10px">Across three internships I have managed website content and operations, audited and designed pages that are now live, researched markets and customers, and produced campaign visuals.</p></div>'+
-  '<img src="img/me.webp" alt="Thuong holding a bouquet of lilies"></div>'+
+  '<img src="me.webp" alt="Thuong holding a bouquet of lilies"></div>'+
   '<div class="facts"><div class="fact"><b>3</b><span>internships: Routine, Timezone, MCV</span></div><div class="fact"><b>17</b><span>projects in this portfolio</span></div><div class="fact"><b>6.5</b><span>IELTS · RMIT Digital Marketing 2023-2026</span></div></div>'+
   '<div class="row"><button class="btn go" data-open="projects">See my projects</button><button class="btn" data-open="xp">My journey</button><button class="btn" data-open="contact">Contact me</button></div>'},
  skills:function(b){b.innerHTML='<h3 class="h-script">my skills</h3><p class="sub-script">what i can do</p><div class="skills">'+SKILLS.map(function(s){return '<button class="skill" data-skill="'+s[0]+'">'+s[1]+'</button>'}).join("")+'</div><p class="hint">Tap a skill to see the projects where I used it.</p>'},
- xp:function(b){b.innerHTML='<h3 class="h-script">my experience</h3><p class="sub-script">what i already did</p><div class="road">'+XP.map(function(x,i){return '<div class="stop'+(i===XP.length-1?" now open":"")+'" data-n="'+(i+1)+'" style="animation-delay:'+(i*.16)+'s"><button aria-expanded="'+(i===XP.length-1)+'"><small>'+x[0]+' · '+x[2]+'</small><h3>'+x[1]+'</h3><p>'+x[3]+'</p></button></div>'}).join("")+'</div><img src="img/catlaptop.webp" alt="A kitten climbing on a laptop" style="width:190px;margin:0 0 -26px auto">'},
+ xp:function(b){b.innerHTML='<h3 class="h-script">my experience</h3><p class="sub-script">what i already did</p><div class="road">'+XP.map(function(x,i){return '<div class="stop'+(i===XP.length-1?" now open":"")+'" data-n="'+(i+1)+'" style="animation-delay:'+(i*.16)+'s"><button aria-expanded="'+(i===XP.length-1)+'"><small>'+x[0]+' · '+x[2]+'</small><h3>'+x[1]+'</h3><p>'+x[3]+'</p></button></div>'}).join("")+'</div><img src="catlaptop.webp" alt="A kitten climbing on a laptop" style="width:190px;margin:0 0 -26px auto">'},
  projects:function(b){
   var list=P.filter(function(p){var f=state.filter;return (f==="all"||(f==="live"?p.live:p.g===f))&&(!state.skill||p.sk.indexOf(state.skill)>-1)&&(!state.q||(p.t+" "+p.who+" "+p.st).toLowerCase().indexOf(state.q)>-1)});
   var sk=state.skill&&SKILLS.filter(function(s){return s[0]===state.skill})[0][1];
   b.innerHTML='<h3 class="h-script">sample projects</h3><div class="chips">'+[["all","All 16"],["routine","Routine internship"],["earlier","Earlier work"],["live","Live online"]].map(function(c){return '<button class="chip" data-filter="'+c[0]+'" aria-pressed="'+(state.filter===c[0])+'">'+c[1]+'</button>'}).join("")+(sk?'<button class="chip" data-skill="" aria-pressed="true">'+sk+' ×</button>':"")+'</div>'+
-  (list.length?'<div class="grid">'+list.map(function(p){return '<button class="file" data-proj="'+p.n+'"><img loading="lazy" src="img/p'+p.n+'_1.webp" alt=""><div><span>project '+p.n+'</span><b>'+p.t+'</b><em>'+p.st+'</em></div></button>'}).join("")+'</div>':'<p class="empty">No project matches that. Try another word or clear the filters.</p>')},
+  (list.length?'<div class="grid">'+list.map(function(p){return '<button class="file" data-proj="'+p.n+'"><img loading="lazy" src="p'+p.n+'_1.webp" alt=""><div><span>project '+p.n+'</span><b>'+p.t+'</b><em>'+p.st+'</em></div></button>'}).join("")+'</div>':'<p class="empty">No project matches that. Try another word or clear the filters.</p>')},
  view:function(b){
   var p=P.filter(function(x){return x.n===state.proj})[0],i=P.indexOf(p),s=Math.min(state.shot,p.imgs);
-  b.innerHTML='<div class="view"><div><div class="laptop"><img id="shot" src="img/p'+p.n+'_'+s+'.webp" alt="Screenshot '+s+' of '+p.t+'"></div><div class="base"></div>'+
-   (p.imgs>1?'<div class="thumbs">'+Array.apply(0,Array(p.imgs)).map(function(_,k){return '<button data-shot="'+(k+1)+'" aria-current="'+(k+1===s)+'" aria-label="Screenshot '+(k+1)+'"><img src="img/p'+p.n+'_'+(k+1)+'.webp" alt=""></button>'}).join("")+'</div>':"")+
+  b.innerHTML='<div class="view"><div><div class="laptop"><img id="shot" src="p'+p.n+'_'+s+'.webp" alt="Screenshot '+s+' of '+p.t+'"></div><div class="base"></div>'+
+   (p.imgs>1?'<div class="thumbs">'+Array.apply(0,Array(p.imgs)).map(function(_,k){return '<button data-shot="'+(k+1)+'" aria-current="'+(k+1===s)+'" aria-label="Screenshot '+(k+1)+'"><img src="p'+p.n+'_'+(k+1)+'.webp" alt=""></button>'}).join("")+'</div>':"")+
    '</div><div><span class="pnum">project '+p.n+' · '+p.who+'</span><h3>'+p.t+'</h3><span class="pill">'+p.st+'</span>'+
    (p.b?p.b.map(function(x){return '<div class="lab">'+x[0]+'</div><p>'+x[1]+'</p>'}).join(""):'<div class="lab">Full work</div><p>The complete piece opens from the link below.</p>')+
    '<div class="nav">'+(p.link?'<a class="btn go" href="'+p.link+'" target="_blank" rel="noopener">Open link ↗</a>':"")+'<button class="btn sm" data-proj="'+P[(i+P.length-1)%P.length].n+'">← Prev</button><button class="btn sm" data-proj="'+P[(i+1)%P.length].n+'">Next →</button><button class="btn sm" data-open="projects">All projects</button></div></div></div>'},
  contact:function(b){b.className="body contact";b.innerHTML='<div class="big">Let\'s Work</div><div class="sm">contact me</div>'+
   '<div class="line"><code>0866432269</code><button class="btn sm" data-copy="0866432269">Copy</button></div>'+
   '<div class="line"><code>thuongnguyennguyentran@gmail.com</code><button class="btn sm" data-copy="thuongnguyennguyentran@gmail.com">Copy</button></div>'+
-  '<p style="margin-top:12px;font-size:14px">District 7, Ho Chi Minh City</p><img src="img/catlie.webp" alt="A ginger cat lying on the grass">'}
+  '<p style="margin-top:12px;font-size:14px">District 7, Ho Chi Minh City</p><img src="catlie.webp" alt="A ginger cat lying on the grass">'}
 };
 
 /* one click handler for everything inside windows */
